@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/b3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/f1"
+        android:layout_width="407dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/anton"
+        android:text="COUNTER"
+        android:textAlignment="center"
+        android:textColor="#303F9F"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="150dp"
+        android:layout_height="94dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="-20sp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.249"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f1"
+        app:layout_constraintVertical_bias="0.315"
+        app:rippleColor="#EF0E0E" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="87dp"
+        android:layout_height="69dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/b1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f1" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:backgroundTint="#C60909"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="RESET"
+        android:textSize="16sp"
+        app:cornerRadius="65sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b1"
+        app:layout_constraintVertical_bias="0.221"
+        app:strokeColor="#D0F3EF0B"
+        app:strokeWidth="3sp" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="150dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="20dp"
+        android:text="+"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/b2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2"
+        app:layout_constraintVertical_bias="0.454"
+        app:rippleColor="#048F3E" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
